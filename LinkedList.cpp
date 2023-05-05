@@ -36,8 +36,8 @@
     int a = 0;
      a = traverse(pos1)->data;
      traverse(pos1)->data=traverse(pos2)->data;
-     a = traverse(pos2)->data;}
-     else {
-        return false;
+     a = traverse(pos2)->data;
+     return true;
      }
+     return false;
  }
