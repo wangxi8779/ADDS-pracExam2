@@ -32,5 +32,12 @@
   }
 
  bool LinkedList::swap(int pos1,int pos2){
-     
+    if (traverse(pos1)!= nullptr && traverse(pos2)!= nullptr){
+    int a = 0;
+     a = traverse(pos1)->data;
+     traverse(pos1)->data=traverse(pos2)->data;
+     a = traverse(pos2)->data;}
+     else {
+        return false;
+     }
  }
